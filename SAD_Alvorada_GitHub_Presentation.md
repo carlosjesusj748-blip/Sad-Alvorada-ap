@@ -103,6 +103,5 @@
 
 ## 👨‍💻 Autor & Portfólio
 
-**Carlos de Souza de Jesus**  
-*Desenvolvedor de Software & Analista de Sistemas de Apoio à Decisão*  
+**Carlos de Souza de Jesus**    
 🌐 **Portfólio Executivo:** https://portfolio-executivo-app.web.app/
