@@ -22,7 +22,7 @@
         :root {
             --bg-dark: #05080f;
             --bg-card: rgba(15, 23, 42, 0.6);
-            --accent: #10b981; /* Verde Esmeralda (Crescimento/Valor) */
+            --accent: #10b981;
             --accent-glow: rgba(16, 185, 129, 0.4);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
@@ -49,7 +49,6 @@
             padding: 3rem 1.5rem;
         }
 
-        /* Glassmorphism Premium */
         .glass-card {
             background: var(--bg-card);
             backdrop-filter: blur(16px);
@@ -68,7 +67,6 @@
             box-shadow: 0 12px 40px rgba(16, 185, 129, 0.1);
         }
 
-        /* Hero Section */
         .hero { text-align: center; padding: 2rem 0 3rem; }
 
         .badge {
@@ -105,7 +103,6 @@
             margin-right: auto;
         }
 
-        /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -146,7 +143,6 @@
             box-shadow: none;
         }
 
-        /* Features Grid */
         .features-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -183,7 +179,6 @@
         .feature-text h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--text-primary); }
         .feature-text p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
 
-        /* Tech Stack */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -212,7 +207,6 @@
 
         .tech-tag:hover { border-color: var(--accent); color: var(--text-primary); }
 
-        /* Founder Section */
         .founder { text-align: center; margin-top: 2.5rem; }
 
         .founder-avatar {
@@ -230,7 +224,6 @@
             box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 2.5rem 0 1rem;
@@ -240,22 +233,6 @@
             margin-top: 3rem;
         }
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--text-secondary);
-            font-size: 1.6rem;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover { color: var(--accent); transform: translateY(-3px); }
-
-        /* Animations */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -270,7 +247,6 @@
 <body>
 
     <div class="container">
-        <!-- Hero Section -->
         <header class="hero animate-in" style="animation-delay: 0.1s;">
             <span class="badge"><i class="fas fa-bolt"></i> MVP 100% Funcional & Validado</span>
             <h1>SAD Alvorada</h1>
@@ -281,7 +257,6 @@
             </a>
         </header>
 
-        <!-- O Problema -->
         <section class="glass-card animate-in" style="animation-delay: 0.2s;">
             <h2 style="margin-bottom: 1rem; color: #f87171; font-size: 1.3rem;">
                 <i class="fas fa-exclamation-triangle"></i> A Cegueira de Dados nas PMEs
@@ -291,7 +266,6 @@
             </p>
         </section>
 
-        <!-- A Solução -->
         <section class="glass-card animate-in" style="animation-delay: 0.3s;">
             <h2 style="margin-bottom: 1.5rem; color: var(--accent); font-size: 1.3rem;">
                 <i class="fas fa-lightbulb"></i> Inteligência ao Alcance da Diretoria
@@ -328,7 +302,6 @@
             </div>
         </section>
 
-        <!-- Tech Stack -->
         <section class="glass-card animate-in" style="animation-delay: 0.4s; text-align: center;">
             <h3 style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-primary);">Stack Tecnológica de Ponta</h3>
             <div class="tech-stack">
@@ -340,7 +313,6 @@
             </div>
         </section>
 
-        <!-- Founder & CTA -->
         <section class="founder animate-in" style="animation-delay: 0.5s;">
             <div class="founder-avatar">CJ</div>
             <h2 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Carlos Jesus</h2>
@@ -358,20 +330,13 @@
             </a>
         </section>
 
-        <!-- Footer -->
         <footer>
-            <div class="social-links">
-                <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://portfolio-executivo-app.web.app/" target="_blank" title="Portfólio"><i class="fas fa-globe"></i></a>
-            </div>
             <p>&copy; 2026 SAD Alvorada. Todos os direitos reservados.</p>
             <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">Simplificando dados para salvar e fazer crescer negócios.</p>
         </footer>
     </div>
 
     <script>
-        // Animação suave ao rolar a página
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
