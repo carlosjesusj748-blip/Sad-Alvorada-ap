@@ -6,103 +6,101 @@
     <title>SAD Alvorada | Inteligência de Decisão para PMEs</title>
     
     <!-- Metatags para Redes Sociais (Open Graph / Twitter) -->
-    <meta property="og:title" content="SAD Alvorada - O Cockpit Inteligente para PMEs">
-    <meta property="og:description" content="Transformando dados operacionais em decisões estratégicas com IA Multiagente e KDD. Chega de decisões no escuro.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:title" content="SAD Alvorada - O Fim da Intuição, o Início da Precisão">
+    <meta property="og:description" content="Transformando o caos contábil em alavancas de geração de valor em tempo real com IA de ultra-velocidade.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://portfolio-executivo-app.web.app/">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Fontes e Ícones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --bg-dark: #0f172a;
-            --bg-card: rgba(30, 41, 59, 0.7);
-            --accent: #10b981; /* Verde Esmeralda (Alvorada/Crescimento) */
-            --accent-hover: #059669;
+            --bg-dark: #05080f;
+            --bg-card: rgba(15, 23, 42, 0.6);
+            --accent: #10b981; /* Verde Esmeralda (Crescimento/Valor) */
+            --accent-glow: rgba(16, 185, 129, 0.4);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.08);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 40%);
+                radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 45%);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
-        /* Glassmorphism Card Style */
+        /* Glassmorphism Premium */
         .glass-card {
             background: var(--bg-card);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--glass-border);
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .glass-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(16, 185, 129, 0.15);
+            transform: translateY(-6px);
             border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 12px 40px rgba(16, 185, 129, 0.1);
         }
 
-        /* Header / Hero */
-        .hero {
-            text-align: center;
-            padding: 3rem 0 2rem;
-        }
+        /* Hero Section */
+        .hero { text-align: center; padding: 2rem 0 3rem; }
 
         .badge {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.15);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
             color: var(--accent);
-            padding: 0.4rem 1rem;
+            padding: 0.5rem 1.2rem;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(16, 185, 129, 0.3);
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            letter-spacing: 0.5px;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #ffffff, #94a3b8);
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
-            max-width: 600px;
+            margin-bottom: 2.5rem;
+            max-width: 580px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -112,156 +110,160 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 0.75rem;
             background: var(--accent);
-            color: white;
+            color: #05080f;
             text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            font-weight: 600;
+            padding: 1.1rem 2.2rem;
+            border-radius: 14px;
+            font-weight: 700;
             font-size: 1.05rem;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
+            box-shadow: 0 0 20px var(--accent-glow);
         }
 
         .btn:hover {
-            background: var(--accent-hover);
-            transform: scale(1.02);
-            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+            background: #34d399;
+            transform: scale(1.03);
+            box-shadow: 0 0 30px var(--accent-glow);
         }
 
         .btn-outline {
             background: transparent;
             border: 1px solid var(--glass-border);
             color: var(--text-primary);
+            box-shadow: none;
         }
 
         .btn-outline:hover {
             background: rgba(255, 255, 255, 0.05);
             border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: none;
         }
 
         /* Features Grid */
         .features-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1rem;
+            gap: 1.2rem;
             margin-top: 1rem;
         }
 
         @media (min-width: 640px) {
-            .features-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            h1 { font-size: 3rem; }
+            .features-grid { grid-template-columns: 1fr 1fr; }
+            h1 { font-size: 3.2rem; }
         }
 
         .feature-item {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
+            padding: 0.5rem;
         }
 
         .feature-icon {
             background: rgba(16, 185, 129, 0.1);
             color: var(--accent);
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
             flex-shrink: 0;
+            border: 1px solid rgba(16, 185, 129, 0.2);
         }
 
-        .feature-text h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .feature-text p {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
+        .feature-text h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--text-primary); }
+        .feature-text p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
 
         /* Tech Stack */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.6rem;
             justify-content: center;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .tech-tag {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--glass-border);
-            padding: 0.4rem 0.8rem;
-            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
             font-size: 0.85rem;
+            font-weight: 500;
             color: var(--text-secondary);
+            transition: all 0.3s;
         }
+        
+        .tech-tag.highlight {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .tech-tag:hover { border-color: var(--accent); color: var(--text-primary); }
 
         /* Founder Section */
-        .founder {
-            text-align: center;
-            margin-top: 2rem;
-        }
+        .founder { text-align: center; margin-top: 2.5rem; }
 
         .founder-avatar {
-            width: 80px;
-            height: 80px;
+            width: 88px;
+            height: 88px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--accent), #3b82f6);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 auto 1rem;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0 auto 1.2rem;
             color: white;
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 2rem 0;
+            padding: 2.5rem 0 1rem;
             color: var(--text-secondary);
             font-size: 0.85rem;
             border-top: 1px solid var(--glass-border);
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .social-links a {
             color: var(--text-secondary);
-            font-size: 1.5rem;
-            transition: color 0.3s;
+            font-size: 1.6rem;
+            transition: all 0.3s;
         }
 
-        .social-links a:hover {
-            color: var(--accent);
-        }
+        .social-links a:hover { color: var(--accent); transform: translateY(-3px); }
 
         /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         .animate-in {
-            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 </head>
@@ -269,30 +271,34 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <header class="hero animate-in">
-            <span class="badge">🚀 MVP 100% Funcional</span>
+        <header class="hero animate-in" style="animation-delay: 0.1s;">
+            <span class="badge"><i class="fas fa-bolt"></i> MVP 100% Funcional & Validado</span>
             <h1>SAD Alvorada</h1>
-            <p class="subtitle">O Cockpit inteligente para a saúde financeira e geração de valor nas PMEs. Transformando dados operacionais em decisões estratégicas com IA.</p>
+            <p class="subtitle">O fim da intuição cega. O início da precisão. Transformamos o caos contábil de PMEs em alavancas de geração de valor em tempo real.</p>
             
             <a href="https://portfolio-executivo-app.web.app/" target="_blank" class="btn">
-                <i class="fas fa-external-link-alt"></i> Ver Portfólio Executivo Completo
+                <i class="fas fa-rocket"></i> Acessar Portfólio Executivo Completo
             </a>
         </header>
 
         <!-- O Problema -->
-        <section class="glass-card animate-in" style="animation-delay: 0.1s;">
-            <h2 style="margin-bottom: 1rem; color: #f87171;"><i class="fas fa-exclamation-triangle"></i> A Cegueira de Dados nas PMEs</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                Pequenos empresários tomam decisões no escuro, baseados em intuição ("feeling"), com excesso de planilhas soltas e ERPs que só olham para o retrovisor. O resultado? Mortalidade precoce por falta de previsão de demanda e gestão de caixa ineficiente.
+        <section class="glass-card animate-in" style="animation-delay: 0.2s;">
+            <h2 style="margin-bottom: 1rem; color: #f87171; font-size: 1.3rem;">
+                <i class="fas fa-exclamation-triangle"></i> A Cegueira de Dados nas PMEs
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.05rem;">
+                Pequenos empresários tomam decisões no escuro, baseados em "feeling", com excesso de planilhas soltas e ERPs que só olham para o retrovisor. O resultado? Mortalidade precoce por falta de previsão de demanda e gestão de caixa ineficiente.
             </p>
         </section>
 
         <!-- A Solução -->
-        <section class="glass-card animate-in" style="animation-delay: 0.2s;">
-            <h2 style="margin-bottom: 1.5rem; color: var(--accent);"><i class="fas fa-lightbulb"></i> A Solução: Inteligência ao Alcance da Diretoria</h2>
+        <section class="glass-card animate-in" style="animation-delay: 0.3s;">
+            <h2 style="margin-bottom: 1.5rem; color: var(--accent); font-size: 1.3rem;">
+                <i class="fas fa-lightbulb"></i> Inteligência ao Alcance da Diretoria
+            </h2>
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-file-upload"></i></div>
+                    <div class="feature-icon"><i class="fas fa-file-csv"></i></div>
                     <div class="feature-text">
                         <h3>Upload Universal</h3>
                         <p>Ingestão agnóstica (CSV, Excel) sem mapeamento manual exaustivo.</p>
@@ -302,7 +308,7 @@
                     <div class="feature-icon"><i class="fas fa-brain"></i></div>
                     <div class="feature-text">
                         <h3>Motor KDD & IA</h3>
-                        <p>Algoritmos (K-Means, DBSCAN, Apriori) + Comitê Multiagente CrewAI.</p>
+                        <p>Algoritmos estatísticos + Orquestração Multiagente de ultra-velocidade.</p>
                     </div>
                 </div>
                 <div class="feature-item">
@@ -313,7 +319,7 @@
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-file-pdf"></i></div>
+                    <div class="feature-icon"><i class="fas fa-file-signature"></i></div>
                     <div class="feature-text">
                         <h3>Relatório Executivo</h3>
                         <p>Parecer formal em linguagem de negócios, pronto para homologação.</p>
@@ -323,11 +329,11 @@
         </section>
 
         <!-- Tech Stack -->
-        <section class="glass-card animate-in" style="animation-delay: 0.3s; text-align: center;">
-            <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Stack Tecnológica de Ponta</h3>
+        <section class="glass-card animate-in" style="animation-delay: 0.4s; text-align: center;">
+            <h3 style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-primary);">Stack Tecnológica de Ponta</h3>
             <div class="tech-stack">
                 <span class="tech-tag">Python / FastAPI</span>
-                <span class="tech-tag">CrewAI + Groq LLaMA-3.3</span>
+                <span class="tech-tag highlight"><i class="fas fa-bolt"></i> Groq (Ultra-Low Latency)</span>
                 <span class="tech-tag">Scikit-Learn / Pandas</span>
                 <span class="tech-tag">Supabase</span>
                 <span class="tech-tag">PWA Glassmorphism</span>
@@ -335,19 +341,19 @@
         </section>
 
         <!-- Founder & CTA -->
-        <section class="founder animate-in" style="animation-delay: 0.4s;">
+        <section class="founder animate-in" style="animation-delay: 0.5s;">
             <div class="founder-avatar">CJ</div>
-            <h2>Carlos Jesus</h2>
-            <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">Fundador & Desenvolvedor Full-Stack</p>
-            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 1.5rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 0.3rem;">Carlos Jesus</h2>
+            <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.8rem;">Fundador & Desenvolvedor Full-Stack</p>
+            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 2rem; font-size: 1rem;">
                 Unindo visão C-Level, metodologias financeiras clássicas e engenharia de software ágil para democratizar a inteligência corporativa nas PMEs.
             </p>
             
             <a href="https://portfolio-executivo-app.web.app/" target="_blank" class="btn">
-                <i class="fas fa-briefcase"></i> Acessar Portfólio Executivo
+                <i class="fas fa-briefcase"></i> Ver Portfólio Executivo
             </a>
             <br><br>
-            <a href="mailto:contato@exemplo.com" class="btn btn-outline" style="max-width: 400px;">
+            <a href="mailto:seu-email@exemplo.com" class="btn btn-outline" style="max-width: 420px;">
                 <i class="fas fa-envelope"></i> Entrar em Contato
             </a>
         </section>
@@ -360,12 +366,12 @@
                 <a href="https://portfolio-executivo-app.web.app/" target="_blank" title="Portfólio"><i class="fas fa-globe"></i></a>
             </div>
             <p>&copy; 2026 SAD Alvorada. Todos os direitos reservados.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.75rem;">Simplificando dados para salvar e fazer crescer negócios.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">Simplificando dados para salvar e fazer crescer negócios.</p>
         </footer>
     </div>
 
     <script>
-        // Simples script para adicionar um efeito suave ao rolar a página
+        // Animação suave ao rolar a página
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -374,12 +380,12 @@
                         entry.target.style.transform = 'translateY(0)';
                     }
                 });
-            });
+            }, { threshold: 0.1 });
             
             document.querySelectorAll('.animate-in').forEach((el) => {
                 el.style.opacity = 0;
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
                 observer.observe(el);
             });
         });
